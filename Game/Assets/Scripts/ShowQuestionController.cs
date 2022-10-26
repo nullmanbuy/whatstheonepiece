@@ -7,15 +7,17 @@ public class ShowQuestionController : MonoBehaviour
 {
     private QuestionSaver _storer => QuestionSaver.Storer;
     public TMP_Text questionText;
+    public TMP_Text currentLevelText;
     private Level _currentLevel;
     public float timeToShowQuestion;
 
     private void Start() {
         _storer.currentLevel = _storer.levels[_storer.currentLevelIndex];
         _currentLevel = QuestionSaver.Storer.currentLevel;
+        currentLevelText.SetText("Nível - " + _currentLevel.dificultName.ToString());
         QuestionSaver.Storer.currentQuestion = SetRandomQuestion(_currentLevel.dificultQuestions);
 
-        questionText.SetText(_storer.currentQuestion.questionAsk);
+        questionText.SetText(_storer.currentQuestion.questionAsk + "?");
         SceneCaller.instance.CallScene("QuestionScene", timeToShowQuestion);
     }
     public Question SetRandomQuestion(List<Question> questions) {
