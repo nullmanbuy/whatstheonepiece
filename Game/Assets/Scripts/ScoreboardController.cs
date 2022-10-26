@@ -10,14 +10,9 @@ public class ScoreboardController : MonoBehaviour
     [SerializeField] GameObject retryElement;
 
     private void Start() {
-        if(_storer.hasAnsweredCorrectly) {
-            if (!_storer.isTheLastQuestion) return;
-            retryElement.SetActive(true);
-            nextElement.SetActive(false);
-        } else {
-            retryElement.SetActive(true);
-            nextElement.SetActive(false);
-        }
+        if(_storer.hasAnsweredCorrectly && _storer.isTheLastQuestion) return;
+        retryElement.SetActive(true);
+        nextElement.SetActive(false);
     }
 
     public void HandleQuizReset() {
