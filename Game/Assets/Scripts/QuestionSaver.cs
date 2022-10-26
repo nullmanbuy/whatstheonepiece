@@ -23,7 +23,6 @@ public class QuestionSaver : MonoBehaviour
     }
 
     public void ResetQuiz() {
-        print("Quiz data reseted");
         currentLevelIndex = 0;
         currentLevel = levels[0];
         currentLevel.dificultQuestions = new List<Question>(currentLevel.questionsData);

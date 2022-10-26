@@ -12,9 +12,9 @@ public class QuizController : MonoBehaviour
     private int currentQuestionIndex;
 
     [Header("Timer Text")]
-    [SerializeField] float timeToAnswer;
     private float currentTime;
     [SerializeField] private TMP_Text timeText;
+    [SerializeField] float timeToAnswer => _storer.currentLevel.timeToQuestion;
 
     public UnityEvent OnTimesOver;
 
