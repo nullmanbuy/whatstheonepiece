@@ -5,30 +5,37 @@ using TMPro;
 using Utils;
 public class ShowQuestionController : MonoBehaviour
 {
+    //storer
     private QuestionSaver _storer => QuestionSaver.Storer;
+
+    private Level _currentLevel => _storer.currentLevel;
+    private int levelsLength => _storer.levels.Length;
+    private int remainingQuestionsLength => _storer.currentLevel.remainingQuestions.Count;
+    
     public TMP_Text questionText;
     public TMP_Text currentLevelText;
-    private Level _currentLevel;
     public float timeToShowQuestion;
 
     private void Start() {
+        _storer.currentQuestionIndex++;
+        _storer.totalOfQuestionsUsed++;
         _storer.currentLevel = _storer.levels[_storer.currentLevelIndex];
-        _currentLevel = QuestionSaver.Storer.currentLevel;
+
         currentLevelText.SetText("Nível - " + _currentLevel.dificultName.ToString());
-        QuestionSaver.Storer.currentQuestion = SetRandomQuestion(_currentLevel.dificultQuestions);
+        QuestionSaver.Storer.currentQuestion = SetRandomQuestion();
 
         questionText.SetText(_storer.currentQuestion.questionAsk + "?");
         SceneCaller.instance.CallScene("QuestionScene", timeToShowQuestion);
     }
-    public Question SetRandomQuestion(List<Question> questions) {
-        _currentLevel = QuestionSaver.Storer.currentLevel;
-        int randomIndex = Random.Range(0, questions.Count);
-        QuestionSaver.Storer.currentQuestion = _currentLevel.dificultQuestions[randomIndex];
+    public Question SetRandomQuestion() {
+        int randomIndex = Random.Range(0, remainingQuestionsLength);
+        QuestionSaver.Storer.currentQuestion = _currentLevel.remainingQuestions[randomIndex];
 
         Question currentQuestion = QuestionSaver.Storer.currentQuestion;
-        _currentLevel.dificultQuestions.RemoveAt(randomIndex);
+        _currentLevel.remainingQuestions.RemoveAt(randomIndex);
+        print("removing used question");
 
-        if (_currentLevel.dificultQuestions.Count == 0) _storer.isTheLastQuestion = true;
+        if (remainingQuestionsLength == 0 && _currentLevel == _storer.levels[levelsLength - 1]) _storer.isTheLastQuestion = true;
         return currentQuestion;
     }
 }

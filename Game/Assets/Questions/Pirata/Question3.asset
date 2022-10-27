@@ -12,13 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8adbb27df521cf84097400c25665db22, type: 3}
   m_Name: Question3
   m_EditorClassIdentifier: 
-  questionAsk: Quem fala que prefere morrer do que recuar
+  questionAsk: "Qual era a forma\xE7\xE3o da tripula\xE7\xE3o antes de entrarem na
+    Grand line"
   options:
-  - optionText: Zoro
-    correctAnwser: 1
-  - optionText: Luffy
+  - optionText: Luffy, Zoro, Nami e Usopp
+    correctAnwser: 0
+  - optionText: Luffy, Zoro, Nami, Sanji e Chooper
     correctAnwser: 0
   - optionText: Sogeking
     correctAnwser: 0
-  - optionText: Enel
-    correctAnwser: 0
+  - optionText: Luffy, Zoro, Nami, Usopp e Sanji
+    correctAnwser: 1

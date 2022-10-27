@@ -12,13 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8adbb27df521cf84097400c25665db22, type: 3}
   m_Name: Question1
   m_EditorClassIdentifier: 
-  questionAsk: Qual a cor do cavalo branco de Napoleao
+  questionAsk: Com qual espada Zoro derrota Mihawk
   options:
-  - optionText: roxo
+  - optionText: Enma
     correctAnwser: 0
-  - optionText: vermelho
+  - optionText: Shusui
     correctAnwser: 0
-  - optionText: azul
+  - optionText: Pexeira cega
     correctAnwser: 0
-  - optionText: branco
+  - optionText: Nenhuma das anteriores
     correctAnwser: 1

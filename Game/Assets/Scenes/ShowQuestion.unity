@@ -239,8 +239,13 @@ MonoBehaviour:
   currentQuestion: {fileID: 11400000, guid: 102e2a79c9eb8124f913bd34cd85bf56, type: 2}
   levels:
   - {fileID: 11400000, guid: 72dd14e92ff60e643a8856ddd34d61f3, type: 2}
+  - {fileID: 11400000, guid: f04cfb274992e2e4baf2618b6dee4244, type: 2}
+  - {fileID: 11400000, guid: aabf656de0c97a54683fcf297eff4efd, type: 2}
+  - {fileID: 11400000, guid: 9386eea103ad77f4b95c7e234844299b, type: 2}
+  - {fileID: 11400000, guid: 59be800e228eb8342a62981e10800b01, type: 2}
   currentLevel: {fileID: 0}
   currentLevelIndex: 0
+  currentQuestionIndex: 0
   isTheLastQuestion: 0
   hasAnsweredCorrectly: 0
 --- !u!4 &111457008
@@ -693,11 +698,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1544034063}
+  - component: {fileID: 1544034064}
+  - component: {fileID: 1544034065}
   - component: {fileID: 1544034062}
   - component: {fileID: 1544034061}
   - component: {fileID: 1544034060}
-  - component: {fileID: 1544034064}
-  - component: {fileID: 1544034065}
   - component: {fileID: 1544034067}
   - component: {fileID: 1544034066}
   m_Layer: 5
