@@ -13,9 +13,60 @@ MonoBehaviour:
   m_Name: Pirate
   m_EditorClassIdentifier: 
   dificultName: 4
-  questionsData:
+  totalLevelQestions: 14
+  allQuestions:
   - {fileID: 11400000, guid: 102e2a79c9eb8124f913bd34cd85bf56, type: 2}
   - {fileID: 11400000, guid: f0de5976d3a6aa546baa6ed29d183395, type: 2}
   - {fileID: 11400000, guid: f5808f2dd1ee17848b984d5009ad3ced, type: 2}
-  dificultQuestions: []
-  timeToQuestion: 10
+  - {fileID: 11400000, guid: f5808f2dd1ee17848b984d5009ad3ced, type: 2}
+  - {fileID: 11400000, guid: f5808f2dd1ee17848b984d5009ad3ced, type: 2}
+  - {fileID: 11400000, guid: f5808f2dd1ee17848b984d5009ad3ced, type: 2}
+  - {fileID: 11400000, guid: f5808f2dd1ee17848b984d5009ad3ced, type: 2}
+  - {fileID: 11400000, guid: f5808f2dd1ee17848b984d5009ad3ced, type: 2}
+  - {fileID: 11400000, guid: f5808f2dd1ee17848b984d5009ad3ced, type: 2}
+  - {fileID: 11400000, guid: f5808f2dd1ee17848b984d5009ad3ced, type: 2}
+  - {fileID: 11400000, guid: f5808f2dd1ee17848b984d5009ad3ced, type: 2}
+  - {fileID: 11400000, guid: f5808f2dd1ee17848b984d5009ad3ced, type: 2}
+  - {fileID: 11400000, guid: f5808f2dd1ee17848b984d5009ad3ced, type: 2}
+  - {fileID: 11400000, guid: f5808f2dd1ee17848b984d5009ad3ced, type: 2}
+  - {fileID: 11400000, guid: f5808f2dd1ee17848b984d5009ad3ced, type: 2}
+  - {fileID: 11400000, guid: f5808f2dd1ee17848b984d5009ad3ced, type: 2}
+  - {fileID: 11400000, guid: f5808f2dd1ee17848b984d5009ad3ced, type: 2}
+  - {fileID: 11400000, guid: f5808f2dd1ee17848b984d5009ad3ced, type: 2}
+  - {fileID: 11400000, guid: f5808f2dd1ee17848b984d5009ad3ced, type: 2}
+  - {fileID: 11400000, guid: f5808f2dd1ee17848b984d5009ad3ced, type: 2}
+  - {fileID: 11400000, guid: f5808f2dd1ee17848b984d5009ad3ced, type: 2}
+  - {fileID: 11400000, guid: f5808f2dd1ee17848b984d5009ad3ced, type: 2}
+  - {fileID: 11400000, guid: f5808f2dd1ee17848b984d5009ad3ced, type: 2}
+  - {fileID: 11400000, guid: f5808f2dd1ee17848b984d5009ad3ced, type: 2}
+  - {fileID: 11400000, guid: f5808f2dd1ee17848b984d5009ad3ced, type: 2}
+  - {fileID: 11400000, guid: f5808f2dd1ee17848b984d5009ad3ced, type: 2}
+  - {fileID: 11400000, guid: f5808f2dd1ee17848b984d5009ad3ced, type: 2}
+  - {fileID: 11400000, guid: f5808f2dd1ee17848b984d5009ad3ced, type: 2}
+  - {fileID: 11400000, guid: f5808f2dd1ee17848b984d5009ad3ced, type: 2}
+  - {fileID: 11400000, guid: f5808f2dd1ee17848b984d5009ad3ced, type: 2}
+  - {fileID: 11400000, guid: f5808f2dd1ee17848b984d5009ad3ced, type: 2}
+  - {fileID: 11400000, guid: f5808f2dd1ee17848b984d5009ad3ced, type: 2}
+  - {fileID: 11400000, guid: f5808f2dd1ee17848b984d5009ad3ced, type: 2}
+  - {fileID: 11400000, guid: f5808f2dd1ee17848b984d5009ad3ced, type: 2}
+  - {fileID: 11400000, guid: f5808f2dd1ee17848b984d5009ad3ced, type: 2}
+  - {fileID: 11400000, guid: f5808f2dd1ee17848b984d5009ad3ced, type: 2}
+  - {fileID: 11400000, guid: f5808f2dd1ee17848b984d5009ad3ced, type: 2}
+  - {fileID: 11400000, guid: f5808f2dd1ee17848b984d5009ad3ced, type: 2}
+  - {fileID: 11400000, guid: f5808f2dd1ee17848b984d5009ad3ced, type: 2}
+  - {fileID: 11400000, guid: f5808f2dd1ee17848b984d5009ad3ced, type: 2}
+  - {fileID: 11400000, guid: f5808f2dd1ee17848b984d5009ad3ced, type: 2}
+  - {fileID: 11400000, guid: f5808f2dd1ee17848b984d5009ad3ced, type: 2}
+  - {fileID: 11400000, guid: f5808f2dd1ee17848b984d5009ad3ced, type: 2}
+  - {fileID: 11400000, guid: f5808f2dd1ee17848b984d5009ad3ced, type: 2}
+  - {fileID: 11400000, guid: f5808f2dd1ee17848b984d5009ad3ced, type: 2}
+  - {fileID: 11400000, guid: f5808f2dd1ee17848b984d5009ad3ced, type: 2}
+  - {fileID: 11400000, guid: f5808f2dd1ee17848b984d5009ad3ced, type: 2}
+  - {fileID: 11400000, guid: f5808f2dd1ee17848b984d5009ad3ced, type: 2}
+  - {fileID: 11400000, guid: f5808f2dd1ee17848b984d5009ad3ced, type: 2}
+  - {fileID: 11400000, guid: f5808f2dd1ee17848b984d5009ad3ced, type: 2}
+  remainingQuestions:
+  - {fileID: 11400000, guid: 102e2a79c9eb8124f913bd34cd85bf56, type: 2}
+  - {fileID: 11400000, guid: f0de5976d3a6aa546baa6ed29d183395, type: 2}
+  - {fileID: 11400000, guid: f5808f2dd1ee17848b984d5009ad3ced, type: 2}
+  timeToQuestion: 30

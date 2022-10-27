@@ -46,9 +46,10 @@ public class QuizController : MonoBehaviour
 
     public void GoToNextQuestion() {
         _storer.hasAnsweredCorrectly = true;
-        if (_storer.currentLevel.dificultQuestions.Count == 0) {
+        if (_storer.currentQuestionIndex >= _storer.currentLevel.totalLevelQestions) {
             if(_storer.currentLevelIndex < _storer.levels.Length) {
                _storer.currentLevelIndex++;
+                _storer.StartRemainingQuestions();
             }
         }
 
