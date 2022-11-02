@@ -20,6 +20,6 @@ public class SceneCaller : MonoBehaviour
     public void CallSceneByString(string sceneName) {
         Coroutines.DoAfter(() => {
             SceneManager.LoadScene(sceneName);
-        }, 1f, this);
+        }, 0.5f, this);
     }
 }

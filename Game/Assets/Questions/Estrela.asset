@@ -15,35 +15,37 @@ MonoBehaviour:
   dificultName: 2
   totalLevelQestions: 8
   allQuestions:
-  - {fileID: 11400000, guid: 102e2a79c9eb8124f913bd34cd85bf56, type: 2}
-  - {fileID: 11400000, guid: f5808f2dd1ee17848b984d5009ad3ced, type: 2}
-  - {fileID: 11400000, guid: f0de5976d3a6aa546baa6ed29d183395, type: 2}
-  - {fileID: 11400000, guid: f0de5976d3a6aa546baa6ed29d183395, type: 2}
-  - {fileID: 11400000, guid: f0de5976d3a6aa546baa6ed29d183395, type: 2}
-  - {fileID: 11400000, guid: f0de5976d3a6aa546baa6ed29d183395, type: 2}
-  - {fileID: 11400000, guid: f0de5976d3a6aa546baa6ed29d183395, type: 2}
-  - {fileID: 11400000, guid: f0de5976d3a6aa546baa6ed29d183395, type: 2}
-  - {fileID: 11400000, guid: f0de5976d3a6aa546baa6ed29d183395, type: 2}
-  - {fileID: 11400000, guid: f0de5976d3a6aa546baa6ed29d183395, type: 2}
-  - {fileID: 11400000, guid: f0de5976d3a6aa546baa6ed29d183395, type: 2}
-  - {fileID: 11400000, guid: f0de5976d3a6aa546baa6ed29d183395, type: 2}
-  - {fileID: 11400000, guid: f0de5976d3a6aa546baa6ed29d183395, type: 2}
-  - {fileID: 11400000, guid: f0de5976d3a6aa546baa6ed29d183395, type: 2}
-  - {fileID: 11400000, guid: f0de5976d3a6aa546baa6ed29d183395, type: 2}
-  - {fileID: 11400000, guid: f0de5976d3a6aa546baa6ed29d183395, type: 2}
-  - {fileID: 11400000, guid: f0de5976d3a6aa546baa6ed29d183395, type: 2}
-  - {fileID: 11400000, guid: f0de5976d3a6aa546baa6ed29d183395, type: 2}
-  - {fileID: 11400000, guid: f0de5976d3a6aa546baa6ed29d183395, type: 2}
-  - {fileID: 11400000, guid: f0de5976d3a6aa546baa6ed29d183395, type: 2}
-  - {fileID: 11400000, guid: f0de5976d3a6aa546baa6ed29d183395, type: 2}
-  - {fileID: 11400000, guid: f0de5976d3a6aa546baa6ed29d183395, type: 2}
-  - {fileID: 11400000, guid: f0de5976d3a6aa546baa6ed29d183395, type: 2}
-  - {fileID: 11400000, guid: f0de5976d3a6aa546baa6ed29d183395, type: 2}
-  - {fileID: 11400000, guid: f0de5976d3a6aa546baa6ed29d183395, type: 2}
-  - {fileID: 11400000, guid: f0de5976d3a6aa546baa6ed29d183395, type: 2}
-  - {fileID: 11400000, guid: f0de5976d3a6aa546baa6ed29d183395, type: 2}
-  - {fileID: 11400000, guid: f0de5976d3a6aa546baa6ed29d183395, type: 2}
-  - {fileID: 11400000, guid: f0de5976d3a6aa546baa6ed29d183395, type: 2}
-  - {fileID: 11400000, guid: f0de5976d3a6aa546baa6ed29d183395, type: 2}
-  remainingQuestions: []
-  timeToQuestion: 30
+  - {fileID: 11400000, guid: d7471ef869ca1d54197a4506d9d9e593, type: 2}
+  - {fileID: 11400000, guid: 079d43a1c2207bd469625b679e4e88fa, type: 2}
+  - {fileID: 11400000, guid: 83f65eaaf542fe44489b85b88cfd81e3, type: 2}
+  - {fileID: 11400000, guid: 63f8c043c92320b4c83208f16a3a1825, type: 2}
+  - {fileID: 11400000, guid: 62444cd6a05e6114da18163e4c0eaa19, type: 2}
+  - {fileID: 11400000, guid: a86bd8d59af899e4183ebe085b81f486, type: 2}
+  - {fileID: 11400000, guid: 307dc676e833a294cb7c166ffd49afaf, type: 2}
+  - {fileID: 11400000, guid: 86da6eebcdb06144fad3124c399a7b99, type: 2}
+  - {fileID: 11400000, guid: 31cea56bf34d91d4a8f1034efef6e4d7, type: 2}
+  - {fileID: 11400000, guid: fed0652dab3c7804d91965da36fc602f, type: 2}
+  - {fileID: 11400000, guid: 738ad570393a1994b8f562b89f5755e9, type: 2}
+  - {fileID: 11400000, guid: e8e2012670609734bbe89d7e9c20e817, type: 2}
+  - {fileID: 11400000, guid: 892b63bfc38b2b343bada7c009bcd2dc, type: 2}
+  - {fileID: 11400000, guid: cc69a2776f043ce418d3897c7ea8b7cc, type: 2}
+  - {fileID: 11400000, guid: 593ab3c89a5a68a41a8c1b6c77d5048d, type: 2}
+  - {fileID: 11400000, guid: 3435c30c4be18864697ea44d828e6d75, type: 2}
+  remainingQuestions:
+  - {fileID: 11400000, guid: d7471ef869ca1d54197a4506d9d9e593, type: 2}
+  - {fileID: 11400000, guid: 079d43a1c2207bd469625b679e4e88fa, type: 2}
+  - {fileID: 11400000, guid: 83f65eaaf542fe44489b85b88cfd81e3, type: 2}
+  - {fileID: 11400000, guid: 63f8c043c92320b4c83208f16a3a1825, type: 2}
+  - {fileID: 11400000, guid: 62444cd6a05e6114da18163e4c0eaa19, type: 2}
+  - {fileID: 11400000, guid: a86bd8d59af899e4183ebe085b81f486, type: 2}
+  - {fileID: 11400000, guid: 307dc676e833a294cb7c166ffd49afaf, type: 2}
+  - {fileID: 11400000, guid: 86da6eebcdb06144fad3124c399a7b99, type: 2}
+  - {fileID: 11400000, guid: 31cea56bf34d91d4a8f1034efef6e4d7, type: 2}
+  - {fileID: 11400000, guid: fed0652dab3c7804d91965da36fc602f, type: 2}
+  - {fileID: 11400000, guid: 738ad570393a1994b8f562b89f5755e9, type: 2}
+  - {fileID: 11400000, guid: e8e2012670609734bbe89d7e9c20e817, type: 2}
+  - {fileID: 11400000, guid: 892b63bfc38b2b343bada7c009bcd2dc, type: 2}
+  - {fileID: 11400000, guid: cc69a2776f043ce418d3897c7ea8b7cc, type: 2}
+  - {fileID: 11400000, guid: 593ab3c89a5a68a41a8c1b6c77d5048d, type: 2}
+  - {fileID: 11400000, guid: 3435c30c4be18864697ea44d828e6d75, type: 2}
+  timeToQuestion: 20

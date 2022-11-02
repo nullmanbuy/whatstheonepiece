@@ -12,13 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8adbb27df521cf84097400c25665db22, type: 3}
   m_Name: Question1
   m_EditorClassIdentifier: 
-  questionAsk: Com qual espada Zoro derrota Mihawk
+  questionAsk: 'Qual o nome da fruta do diabo do Luffy? '
   options:
-  - optionText: Enma
+  - optionText: Gumo gumo no mi
     correctAnwser: 0
-  - optionText: Shusui
-    correctAnwser: 0
-  - optionText: Pexeira cega
-    correctAnwser: 0
-  - optionText: Nenhuma das anteriores
+  - optionText: Gomu Gomu no mi
     correctAnwser: 1
+  - optionText: Goma Goma no mi
+    correctAnwser: 0
+  - optionText: Rubber Rubber No mi
+    correctAnwser: 0

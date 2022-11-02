@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Utils;
+using UnityEngine.SceneManagement;
 public class QuestionSaver : MonoBehaviour
 {
     public static QuestionSaver Storer;
@@ -12,6 +13,7 @@ public class QuestionSaver : MonoBehaviour
     public int currentLevelIndex;
     public int currentQuestionIndex;
     public int totalOfQuestionsUsed;
+    public int currentOfTries;
 
     //states
     public bool isTheLastQuestion;
@@ -32,11 +34,17 @@ public class QuestionSaver : MonoBehaviour
             currentLevel = levels[currentLevelIndex];
             StartRemainingQuestions();
             currentLevelHasChanged = true;
+
+            if(currentLevelIndex == levels.Length - 1 && currentQuestionIndex >= currentLevel.totalLevelQestions) {
+                print("level index: " + currentLevelIndex);
+                print("On last Level of Questions");
+            }
         }
     }
 
     public void ResetQuiz() {
         currentQuestionIndex = 0;
+        currentOfTries = 3;
         currentLevelIndex = 0;
         currentLevel = levels[0];
         totalOfQuestionsUsed = 0;
@@ -45,6 +53,5 @@ public class QuestionSaver : MonoBehaviour
     public void StartRemainingQuestions() {
         currentLevel.remainingQuestions = new List<Question>(currentLevel.allQuestions);
         currentQuestionIndex = 0;
-        print("Enter Remaining Questions" + currentLevel.remainingQuestions.Count);
     }
 }

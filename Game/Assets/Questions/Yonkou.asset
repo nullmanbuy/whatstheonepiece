@@ -15,25 +15,17 @@ MonoBehaviour:
   dificultName: 1
   totalLevelQestions: 6
   allQuestions:
-  - {fileID: 11400000, guid: 102e2a79c9eb8124f913bd34cd85bf56, type: 2}
-  - {fileID: 11400000, guid: 102e2a79c9eb8124f913bd34cd85bf56, type: 2}
-  - {fileID: 11400000, guid: 102e2a79c9eb8124f913bd34cd85bf56, type: 2}
-  - {fileID: 11400000, guid: 102e2a79c9eb8124f913bd34cd85bf56, type: 2}
-  - {fileID: 11400000, guid: 102e2a79c9eb8124f913bd34cd85bf56, type: 2}
-  - {fileID: 11400000, guid: 102e2a79c9eb8124f913bd34cd85bf56, type: 2}
-  - {fileID: 11400000, guid: 102e2a79c9eb8124f913bd34cd85bf56, type: 2}
-  - {fileID: 11400000, guid: 102e2a79c9eb8124f913bd34cd85bf56, type: 2}
-  - {fileID: 11400000, guid: 102e2a79c9eb8124f913bd34cd85bf56, type: 2}
-  - {fileID: 11400000, guid: 102e2a79c9eb8124f913bd34cd85bf56, type: 2}
-  - {fileID: 11400000, guid: 102e2a79c9eb8124f913bd34cd85bf56, type: 2}
-  - {fileID: 11400000, guid: 102e2a79c9eb8124f913bd34cd85bf56, type: 2}
-  - {fileID: 11400000, guid: 102e2a79c9eb8124f913bd34cd85bf56, type: 2}
-  - {fileID: 11400000, guid: 102e2a79c9eb8124f913bd34cd85bf56, type: 2}
-  - {fileID: 11400000, guid: 102e2a79c9eb8124f913bd34cd85bf56, type: 2}
-  - {fileID: 11400000, guid: 102e2a79c9eb8124f913bd34cd85bf56, type: 2}
-  - {fileID: 11400000, guid: 102e2a79c9eb8124f913bd34cd85bf56, type: 2}
-  - {fileID: 11400000, guid: 102e2a79c9eb8124f913bd34cd85bf56, type: 2}
-  - {fileID: 11400000, guid: 102e2a79c9eb8124f913bd34cd85bf56, type: 2}
-  - {fileID: 11400000, guid: 102e2a79c9eb8124f913bd34cd85bf56, type: 2}
-  remainingQuestions: []
-  timeToQuestion: 6
+  - {fileID: 11400000, guid: 66d64490ae1bb1d42bffb24354a34aed, type: 2}
+  - {fileID: 11400000, guid: 9fd6f796a1e991944b7cf20383aeec46, type: 2}
+  - {fileID: 11400000, guid: dfc0b6ace930e3e4581d85da73d2579a, type: 2}
+  - {fileID: 11400000, guid: ca6145216f3c35f42a5cb446067e0570, type: 2}
+  - {fileID: 11400000, guid: 937a5f232a4a90f4d85fb479b63bbd4a, type: 2}
+  - {fileID: 11400000, guid: ca6326c8ac0a50b46bb72e936ac536b0, type: 2}
+  remainingQuestions:
+  - {fileID: 11400000, guid: 66d64490ae1bb1d42bffb24354a34aed, type: 2}
+  - {fileID: 11400000, guid: 9fd6f796a1e991944b7cf20383aeec46, type: 2}
+  - {fileID: 11400000, guid: dfc0b6ace930e3e4581d85da73d2579a, type: 2}
+  - {fileID: 11400000, guid: ca6145216f3c35f42a5cb446067e0570, type: 2}
+  - {fileID: 11400000, guid: 937a5f232a4a90f4d85fb479b63bbd4a, type: 2}
+  - {fileID: 11400000, guid: ca6326c8ac0a50b46bb72e936ac536b0, type: 2}
+  timeToQuestion: 15

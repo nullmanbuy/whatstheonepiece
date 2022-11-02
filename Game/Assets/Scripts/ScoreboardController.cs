@@ -7,6 +7,7 @@ using TMPro;
 public class ScoreboardController : MonoBehaviour
 {
     QuestionSaver _storer => QuestionSaver.Storer;
+    private TransitionController _transitor => TransitionController._controller;
     [SerializeField] GameObject nextElement;
     [SerializeField] GameObject retryElement;
 
@@ -18,33 +19,55 @@ public class ScoreboardController : MonoBehaviour
 
     [Header("Questions box")]
     [SerializeField] Transform levelsColumn;
-    [SerializeField] public List<Image> allQuestionBox;
+    [SerializeField] public List<GameObject> allQuestionBox;
     [SerializeField] private Color filledColor;
+
+    [Header("Tentativas")]
+    [SerializeField] TMP_Text triesText;
 
     [Header("LevelIndicator")]
     public List<GameObject> levelIndicators;
 
+    [Header("GameOver & GameWon")]
+    [SerializeField] GameObject gameOverText;
+    [SerializeField] GameObject gameWonText;
+
     private void Start() {
-        for (int i = 0; i < _storer.totalOfQuestionsUsed; i++) {
-            allQuestionBox[i].color = filledColor;
+        _transitor.OnStart?.Invoke();
+
+        HandleAnswer();
+            
+    }
+
+    private void HandleAnswer() {
+        if(_storer.currentOfTries == 0) {
+            print("Game Over");
+            nextElement.SetActive(false);
+            _storer.currentLevelHasChanged = false;
+            gameOverText.SetActive(true);
         }
-        HandleLevelIndicator();
 
+        if(_storer.isTheLastQuestion && _storer.hasAnsweredCorrectly) {
+            nextElement.SetActive(false);
+            gameWonText.SetActive(true);
+        }
 
+        for (int i = 0; i < _storer.totalOfQuestionsUsed; i++) {
+            //allQuestionBox[i].color = filledColor;
+            allQuestionBox[i].GetComponent<Animator>().SetTrigger("Fill");
+        }
         if (_storer.hasAnsweredCorrectly)
             UpdateAnswerStyle(correctColor, correctSprite, "acertou");
         else
             UpdateAnswerStyle(wrongColor, wrongSprite, "errou");
-
-        if(_storer.hasAnsweredCorrectly && !_storer.isTheLastQuestion) return;
-        nextElement.SetActive(false);
-        _storer.currentLevelHasChanged = false;
+        HandleLevelIndicator();
     }
 
     private void UpdateAnswerStyle(Color32 color, Sprite sprite, string text) {
         answerText.SetText(text);
         answerText.color = color;
         answerImage.sprite = sprite;
+        triesText.SetText($"Tentativas {_storer.currentOfTries}");
     }
 
     public void HandleQuizReset() {
@@ -57,5 +80,9 @@ public class ScoreboardController : MonoBehaviour
             indicator.SetActive(false);
         }
         levelIndicators[_storer.currentLevelIndex].SetActive(true);
+    }
+
+    public void InvokeOutTransition() {
+        _transitor.OnOut?.Invoke();
     }
 }

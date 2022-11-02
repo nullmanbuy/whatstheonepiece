@@ -31,8 +31,7 @@ public class LevelPopulator : MonoBehaviour
 
                 for (int j = 0; j < currentLevel.totalLevelQestions; j++) {
                     GameObject currentQuestionBox = Instantiate(questionBoxPrefab, levelHolder.transform.GetChild(1)) as GameObject;
-                    Image fill = currentQuestionBox.transform.GetChild(0).gameObject.GetComponent<Image>();
-                    _scoreboard.allQuestionBox.Add(fill);
+                    _scoreboard.allQuestionBox.Add(currentQuestionBox);
 
                 }
             }
@@ -51,7 +50,7 @@ public class LevelPopulator : MonoBehaviour
             if(levelChildreenCount == 0)
             break;
         }
-        _scoreboard.allQuestionBox = new List<Image>();
+        _scoreboard.allQuestionBox = new List<GameObject>();
         _scoreboard.levelIndicators = new List<GameObject>();
     }
 }

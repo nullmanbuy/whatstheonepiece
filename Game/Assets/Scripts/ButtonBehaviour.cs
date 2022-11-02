@@ -12,7 +12,9 @@ public class ButtonBehaviour : MonoBehaviour
     public Option data;
     [SerializeField] private TMP_Text buttonText;
     [SerializeField] private Color colorOnHover, normalColor;
-    private Button button; 
+    private Button button;
+    public Color correctColor, wrongColor;
+    private bool hasClicked;
 
     private void Awake() {
         buttonText = transform.GetChild(0).GetComponent<TMP_Text>();
@@ -21,6 +23,7 @@ public class ButtonBehaviour : MonoBehaviour
     public void ChangeTextColor(string colorText) {
         Color colorFromHex;
         ColorUtility.TryParseHtmlString(colorText, out colorFromHex);
+        if(!hasClicked)
         buttonText.color = colorFromHex;
     }
 
@@ -29,11 +32,29 @@ public class ButtonBehaviour : MonoBehaviour
         buttonText.SetText(text);
     }
 
+    public void BlinkButton(Color[] colors, float blinkTime) {
+        StartCoroutine(BlinkCoroutine(colors, blinkTime));
+    }
+
+    IEnumerator BlinkCoroutine(Color[] colors, float blinkTime) {
+        Image sprite = GetComponent<Image>();
+        for (int i = 0; i < blinkTime; i++) {
+            foreach (Color color in colors) {
+                sprite.color = color;
+                yield return new WaitForSeconds(0.1f);
+            }
+        }
+
+        sprite.color = Color.white;
+    }
+
     public void AnswerQuestion() {
+        Quiz.HandleAnswer(data.correctAnwser);
+        hasClicked = true;
         if (data.correctAnwser) {
-            Quiz.GoToNextQuestion();
+            BlinkButton(new Color[] { Color.white, correctColor }, 2f);
         } else {
-            Quiz.HandleWhenAnswerWrong();
+            BlinkButton(new Color[] {Color.white, wrongColor}, 2f);
         }
     }
 }

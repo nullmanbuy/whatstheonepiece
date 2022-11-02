@@ -15,15 +15,13 @@ MonoBehaviour:
   dificultName: 0
   totalLevelQestions: 1
   allQuestions:
-  - {fileID: 11400000, guid: 102e2a79c9eb8124f913bd34cd85bf56, type: 2}
-  - {fileID: 11400000, guid: 102e2a79c9eb8124f913bd34cd85bf56, type: 2}
-  - {fileID: 11400000, guid: 102e2a79c9eb8124f913bd34cd85bf56, type: 2}
-  - {fileID: 11400000, guid: 102e2a79c9eb8124f913bd34cd85bf56, type: 2}
-  - {fileID: 11400000, guid: 102e2a79c9eb8124f913bd34cd85bf56, type: 2}
-  - {fileID: 11400000, guid: 102e2a79c9eb8124f913bd34cd85bf56, type: 2}
-  - {fileID: 11400000, guid: 102e2a79c9eb8124f913bd34cd85bf56, type: 2}
-  - {fileID: 11400000, guid: 102e2a79c9eb8124f913bd34cd85bf56, type: 2}
-  - {fileID: 11400000, guid: 102e2a79c9eb8124f913bd34cd85bf56, type: 2}
-  - {fileID: 11400000, guid: 102e2a79c9eb8124f913bd34cd85bf56, type: 2}
-  remainingQuestions: []
-  timeToQuestion: 30
+  - {fileID: 11400000, guid: 90bad26913b759e45949c1319515effa, type: 2}
+  - {fileID: 11400000, guid: 458471dbea34d514493c7d38ae2a692d, type: 2}
+  - {fileID: 11400000, guid: 415f364a4e20a244caf21d4bacde8d03, type: 2}
+  - {fileID: 11400000, guid: ab7d90d62ae8871499484a4da3b63670, type: 2}
+  - {fileID: 11400000, guid: 38e728b117fc92042892419fd4f54701, type: 2}
+  remainingQuestions:
+  - {fileID: 11400000, guid: 90bad26913b759e45949c1319515effa, type: 2}
+  - {fileID: 11400000, guid: 458471dbea34d514493c7d38ae2a692d, type: 2}
+  - {fileID: 11400000, guid: 38e728b117fc92042892419fd4f54701, type: 2}
+  timeToQuestion: 10

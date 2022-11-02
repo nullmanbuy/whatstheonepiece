@@ -12,14 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8adbb27df521cf84097400c25665db22, type: 3}
   m_Name: Question3
   m_EditorClassIdentifier: 
-  questionAsk: "Qual era a forma\xE7\xE3o da tripula\xE7\xE3o antes de entrarem na
-    Grand line"
+  questionAsk: "Qual o nome do primeiro navio dos Chap\xE9us de Palha"
   options:
-  - optionText: Luffy, Zoro, Nami e Usopp
+  - optionText: Straw Sheep
     correctAnwser: 0
-  - optionText: Luffy, Zoro, Nami, Sanji e Chooper
-    correctAnwser: 0
-  - optionText: Sogeking
-    correctAnwser: 0
-  - optionText: Luffy, Zoro, Nami, Usopp e Sanji
+  - optionText: Going Merry
     correctAnwser: 1
+  - optionText: Big Sheep
+    correctAnwser: 0
+  - optionText: Cabra da Peste
+    correctAnwser: 0

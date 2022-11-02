@@ -7,6 +7,7 @@ public class ShowQuestionController : MonoBehaviour
 {
     //storer
     private QuestionSaver _storer => QuestionSaver.Storer;
+    private TransitionController _transitor => TransitionController._controller;
 
     private Level _currentLevel => _storer.currentLevel;
     private int levelsLength => _storer.levels.Length;
@@ -17,6 +18,7 @@ public class ShowQuestionController : MonoBehaviour
     public float timeToShowQuestion;
 
     private void Start() {
+        _transitor.OnStart?.Invoke();
         _storer.currentQuestionIndex++;
         _storer.totalOfQuestionsUsed++;
         _storer.currentLevel = _storer.levels[_storer.currentLevelIndex];
@@ -25,7 +27,8 @@ public class ShowQuestionController : MonoBehaviour
         QuestionSaver.Storer.currentQuestion = SetRandomQuestion();
 
         questionText.SetText(_storer.currentQuestion.questionAsk + "?");
-        SceneCaller.instance.CallScene("QuestionScene", timeToShowQuestion);
+        Coroutines.DoAfter(() => _transitor.OnOut?.Invoke(), timeToShowQuestion, this);
+        SceneCaller.instance.CallScene("QuestionScene", timeToShowQuestion + 0.5f);
     }
     public Question SetRandomQuestion() {
         int randomIndex = Random.Range(0, remainingQuestionsLength);
@@ -35,7 +38,7 @@ public class ShowQuestionController : MonoBehaviour
         _currentLevel.remainingQuestions.RemoveAt(randomIndex);
         print("removing used question");
 
-        if (remainingQuestionsLength == 0 && _currentLevel == _storer.levels[levelsLength - 1]) _storer.isTheLastQuestion = true;
+        if (_storer.currentQuestionIndex >= _currentLevel.totalLevelQestions && _currentLevel == _storer.levels[levelsLength - 1]) _storer.isTheLastQuestion = true;
         return currentQuestion;
     }
 }
